@@ -4,6 +4,14 @@
  * and open the template in the editor.
  */
 
+var data_array = {
+                'date_start' : '',
+                'date_end' : '',
+                'id' : localStorage.getItem('id'),
+                'procedure_id' : localStorage.getItem('div_id'),
+                'master_id' : '1'
+            }
+
 
 $('#back').click(function(){
     window.location.href="create_order.html";
@@ -22,31 +30,9 @@ $('#check_date').change(function(){
         var time_finish = time.substr(8, 5);
         time_start = date + ' ' + time_start+ ':00';
         time_finish = date + ' ' + time_finish+ ':00';
-        $('#ready').click(function(){
-            var data_array = {
-                'date_start' : time_start,
-                'date_end' : time_finish,
-                'id' : localStorage.getItem('id'),
-                'procedure_id' : localStorage.getItem('div_id'),
-                'master_id' : '1'
-            }
-            data_array = JSON.stringify(data_array);
-
-            var url = "http://mmm.rayl.ru/control_cordova.php?cmd=create_order";
-             $.ajax({ 
-                type: "POST", 
-                url: url, 
-                data: data_array, 
-                crossDomain: true,
-                dataType:"json",
-                success: function (success) { 
-                    if(success){
-                        alert('Ваш заказ успешно создан!');
-                        window.location.href="main_page.html";
-                    }
-                }
-                });
-        });
+        data_array.date_start = time_start;
+        data_array.date_end = time_finish;
+        
     });
 });
 
@@ -57,3 +43,21 @@ function create_html_time(){
             '<div class = "time_div">18:00 - 20:00</div>';
     return html;
 }
+
+$('#ready').click(function(){
+            var array = JSON.stringify(data_array);
+            var url = "http://mmm.rayl.ru/control_cordova.php?cmd=create_order";
+             $.ajax({ 
+                type: "POST", 
+                url: url, 
+                data: array, 
+                crossDomain: true,
+                dataType:"json",
+                success: function (success) { 
+                    if(success){
+                        alert('Ваш заказ успешно создан!');
+                        window.location.href="main_page.html";
+                    }
+                }
+                });
+        });
