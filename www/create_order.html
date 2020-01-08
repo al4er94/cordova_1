@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://mmm.rayl.ru 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/create_order.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="fon_scroll">
+            <a id = "back">Назад</a>
+            <div class = "orders">
+                <span id = "check_drower">Выбрать окрашивание</span>
+                <div class = "drower">
+                    <div id ="drower_1">
+                        <a>Окрашивание в один тон на длинные волосы</a>
+                       
+                        <span id = "span_drower_1">7000-9000 рублей</span>
+                    </div>
+                </div>
+                <div class = "footer">
+                    <span id ="cost">123</span>
+                    <span id = "next"></span>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/create_order.js"></script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08.01.2020, 17:04:18
+    Author     : Kompukter
+*/
+
+#check_date{
+    position: absolute;
+left: 35.07%;
+right: 34.8%;
+top: 31.77%;
+bottom: 66.92%;
+
+font-family: Helvetica;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height */
+color: #C1272D;
+
+}
+
+#check_time{
+    position: absolute;
+    left: 0.13%;
+    right: -0.13%;
+    top: 58.22%;
+    bottom: 16.48%;
+    background: rgba(96, 131, 187, 0.08);
+}
+
+#date{
+    width:  100%;
+    text-align: center;
+font-family: Helvetica;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #C1272D;
+
+}
+.time_div{
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    padding-top:5%;
+}
+
+#ready{
+    position: absolute;
+left: 43.07%;
+right: 41.99%;
+top: 91.37%;
+bottom: 6.9%;
+
+font-family: Helvetica;
+font-size: 17px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #C1272D;
+
+
+}

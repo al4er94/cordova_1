@@ -1,0 +1,116 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07.01.2020, 16:49:11
+    Author     : Kompukter
+*/
+body{
+    position: relative;
+width: 375px;
+height: 812px;
+
+background: #FFFFFF;
+}
+#go_writing{
+    position: absolute;
+    left: 4.8%;
+    right: 4.8%;
+    top: 16.01%;
+    bottom: 76.23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/Image_10.png);
+}
+#check_drower{
+    position: absolute;
+left: 13.33%;
+right: 44%;
+top: 5.7%;
+bottom: 93.02%;
+
+font-family: SF Pro Display;
+font-size: 16px;
+line-height: 19px;
+
+color: #C1272D;
+
+}
+#go_writing span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: Helvetica;
+font-size: 17px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+.info{
+    position: absolute;
+        display: block;
+    left: 5.33%;
+    right: 54.93%;
+    top: 9.98%;
+    bottom: 87.81%
+}
+#fio{
+    font-family: Helvetica;
+        display: block;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #030303;
+}
+
+#telephone{
+        display: block;
+    font-family: Helvetica;
+font-size: 11px;
+line-height: 11px;
+/* identical to box height */
+
+
+color: #C1272D;
+}
+
+#my_orders{
+    position: absolute;
+left: 5.73%;
+right: 5.47%;
+top: 27.26%;
+bottom: 48.17%;
+
+opacity: 0.91;
+border: 1px solid #6083BB;
+}
+#my_orders span{
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+#header_span{
+    color: #C1272D;
+}
+.logout{
+    position: absolute;
+left: 31.73%;
+right: 27.2%;
+top: 91.75%;
+bottom: 6.16%;
+
+font-family: Helvetica;
+font-size: 17px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #C1272D;
+}

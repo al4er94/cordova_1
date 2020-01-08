@@ -1,0 +1,120 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07.01.2020, 16:49:11
+    Author     : Kompukter
+*/
+body{
+    position: relative;
+width: 375px;
+height: 812px;
+
+background: #FFFFFF;
+}
+
+#back{
+    position: absolute;
+left: 7.2%;
+right: 80%;
+top: 3.01%;
+bottom: 95.64%;
+
+font-family: SF Pro Display;
+font-size: 17px;
+line-height: 20px;
+/* identical to box height */
+color: #6083BB;
+
+}
+#check_drower{
+    position: absolute;
+left: 13.33%;
+right: 44%;
+top: 5.7%;
+bottom: 93.02%;
+
+font-family: SF Pro Display;
+font-size: 16px;
+line-height: 19px;
+
+color: #C1272D;
+
+}
+
+.drower div{
+    position: absolute;
+    width: 315px;
+height: 194px;
+left: 22px;
+top: 128px;
+background: url(../img/Group_56.png);
+}
+
+.drower div a{
+    position: absolute;
+    font-family: SF Pro Display;
+font-size: 15px;
+line-height: 14px;
+
+color: #6A7F9D;
+}
+
+.drower div span:first-child{
+    
+position: absolute;
+left: 13.23%;
+right: 76.1%;
+top: 14.29%;
+bottom: 84.62%;
+
+font-family: SF Pro Display;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #6A7F9D;
+}
+.drower div span:last-child{
+ 
+position: absolute;
+left: 13.23%;
+right: 52.37%;
+top: 17.38%;
+bottom: 81.46%;
+
+font-family: SF Pro Display;
+font-size: 15px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #6A7F9D;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-between;
+position: absolute;
+width: 100%;
+top: 92.84%;
+bottom: 3.32%;
+
+background: #000000;
+}
+#cost ,#next{
+
+font-family: SF Pro Display;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+}
+
+#next{
+    color:#C1272D!important;
+}
+
